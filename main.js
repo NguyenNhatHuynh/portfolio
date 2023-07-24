@@ -45,7 +45,6 @@ navItems.forEach(item => {
     })
 })
 
-
 // read more about
 const readMoreBtn = document.querySelector('.read-more');
 const readMoreContent = document.querySelector('.read-more-content');
