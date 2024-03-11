@@ -25,4 +25,10 @@
 
 <!-- Technologies and Tool -->
 <h2> 👨‍💻 About 👨‍💻 </h2>
-I am about 
+Hello, my name is Nguyen Nhat Huynh.
+
+The reason I chose this industry is because I am passionate about technology and want to use my knowledge to create useful products for everyone.
+
+I have knowledge of programming languages such as Java, C++, Python and JavaScript. I am also proficient in software such as Microsoft Office, Adobe Photoshop and Visual Studio.
+
+I have participated in a number of information technology projects such as website development, mobile application programming and graphic design.
