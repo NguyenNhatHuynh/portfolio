@@ -1,6 +1,4 @@
-
 <h1> 👋 PAGE PROFILE OF ME 👋</h1>
-
 
 <!-- Technologies and Tool -->
 <h2>🛠 Technologies and Tools 🛠</h2>
