@@ -1,5 +1,9 @@
 <h1> 👋 PAGE PROFILE OF ME 👋</h1>
 
+
+<h2>👨‍💻About Me👨‍💻</h2>
+<p>Hello! I am Nguyen Nhat Huynh, a software engineer with 2 years of experience in web development. This website is where I introduce myself, my projects and my skills.</p>
+
 <!-- Technologies and Tool -->
 <h2>🛠 Technologies and Tools 🛠</h2>
 🎨 This website uses the language  [HTML, CSS, JAVASCRIPT] 
@@ -23,12 +27,9 @@
 &nbsp;
 </div>
 
-<!-- Technologies and Tool -->
-<h2> 👨‍💻 About 👨‍💻 </h2>
-Hello, my name is Nguyen Nhat Huynh.
+<h2>Author 👨‍💻 </h2>
+<br>
+<img src="https://media.licdn.com/dms/image/D5603AQGMVkG7blqgyg/profile-displayphoto-shrink_400_400/0/1676208321738?e=1715817600&v=beta&t=OHMmUlAc-lT6Tyq0vmpxSIZ8O-m2vUWx7XUThFoyWko" alt="Typing SVG" /></a>
 
-The reason I chose this industry is because I am passionate about technology and want to use my knowledge to create useful products for everyone.
+I would appreciate if you could give this repository a star 🌟. It would help others to discover this. Thank you for your support 👨‍💻
 
-I have knowledge of programming languages such as Java, C++, Python and JavaScript. I am also proficient in software such as Microsoft Office, Adobe Photoshop and Visual Studio.
-
-I have participated in a number of information technology projects such as website development, mobile application programming and graphic design.
