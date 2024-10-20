@@ -28,8 +28,9 @@
 </div>
 
 <h2>Author 👨‍💻 </h2>
-<br>
-<img src="https://media.licdn.com/dms/image/D5603AQGMVkG7blqgyg/profile-displayphoto-shrink_400_400/0/1676208321738?e=1715817600&v=beta&t=OHMmUlAc-lT6Tyq0vmpxSIZ8O-m2vUWx7XUThFoyWko" alt="Typing SVG" /></a>
-
+## Profile
+<a href="https://nguyennhathuynh.github.io/portfolio/" target="blank">
+  Personal Portfolio : Website Programmer Position
+</a>
 I would appreciate if you could give this repository a star 🌟. It would help others to discover this. Thank you for your support 👨‍💻
 
