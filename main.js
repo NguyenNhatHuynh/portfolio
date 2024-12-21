@@ -135,24 +135,12 @@ if (themeToggleBtn && icon) {
 
 document.addEventListener("DOMContentLoaded", () => {
     const projectsData = [
-        { id: 1, category: "web", title: "Fullstack Blog Website", description: "PHP, MySQL, JavaScript", image: "./images/work1.jpg" },
-        { id: 2, category: "web", title: "Design Website E-Commerce Fashion", description: "React, Node.js, MongoDB", image: "./images/work2.jpg" },
-        { id: 3, category: "web", title: "Web Travel", description: "PHP, SQL Server", image: "./images/work3.jpg" },
-        { id: 4, category: "app", title: "App Weather WeatherWave", description: "Flutter, Dart", image: "./images/app_weather.png" },
-        { id: 5, category: "app", title: "Giao Diện App Bán Giày", description: "React Native", image: "./images/app_CURRENTCRAZE.jpg" },
-        { id: 6, category: "app", title: "Finance App", description: "Flutter, Dart", image: "./images/app_finance.png" },
-
-
-
-
-
-
-        { id: 7, category: "app", title: "Giao Diện App Bán Giày", description: "React Native", image: "./images/app_CURRENTCRAZE.jpg" },
-        { id: 8, category: "app", title: "Finance App", description: "Flutter, Dart", image: "./images/app_finance.png" },
-        { id: 9, category: "app", title: "Giao Diện App Bán Giày", description: "React Native", image: "./images/app_CURRENTCRAZE.jpg" },
-        { id: 10, category: "app", title: "Finance App", description: "Flutter, Dart", image: "./images/app_finance.png" },
-        { id: 11, category: "app", title: "Giao Diện App Bán Giày", description: "React Native", image: "./images/app_CURRENTCRAZE.jpg" },
-        { id: 1212, category: "app", title: "Finance App", description: "Flutter, Dart", image: "./images/app_finance.png" },
+        { id: 1, category: "web", title: "Fullstack Blog Website", description: "(PHP, MySQL, JavaScript)", image: "./images/work1.jpg", github: "", livedemo: "", watch: "https://www.youtube.com/watch?v=wPUVV15Sb0I&list=PL2MC9XP17b4eUtCxEcZZiEqK3BGZ8T8dU" },
+        { id: 2, category: "web", title: "Design Website E-Commerce Fashion", description: "(React, Node.js, MongoDB)", image: "./images/work2.jpg", github: "", livedemo: "", watch: "https://www.youtube.com/watch?v=Ip5GkdkCdXo&list=PL2MC9XP17b4c4LZydndC89KZKidPY5F-X" },
+        { id: 3, category: "web", title: "Web Travel", description: "(PHP, SQL Server)", image: "./images/work3.jpg", github: "", livedemo: "", livedemo: "https://www.youtube.com/watch?v=tYoQE_VB6Hw&list=PL2MC9XP17b4cBQzjv00fnB7X6pQYQhJ16" },
+        { id: 4, category: "app", title: "App Weather WeatherWave", description: "(Flutter, Dart)", image: "./images/app_weather.png", github: "", livedemo: "", watch: "https://www.youtube.com/watch?v=PBh3lJZyXfU&list=PL2MC9XP17b4fVes2YB_Rr6id6URdnar-I" },
+        { id: 5, category: "app", title: "Giao Diện App Bán Giày", description: "(React Native)", image: "./images/app_CURRENTCRAZE.jpg", github: "", livedemo: "", watch: "https://www.youtube.com/watch?v=yYwRrmmWyFQ&list=PL2MC9XP17b4fVes2YB_Rr6id6URdnar-I&index=2" },
+        { id: 6, category: "app", title: "Finance App", description: "(Flutter, Dart)", image: "./images/app_finance.png", github: "", livedemo: "", watch: "#" },
     ];
 
     const projectsContainer = document.querySelector(".projects");
@@ -190,6 +178,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
+                 <div class="action">
+                        <a href="${github}" target="blank">Github</a>
+                        <a href="${livedemo}" target="blank">Live Demo</a>
+                        <a href="${watch}" target="blank">Xem Video</a>
+                </div>
             `;
             projectsContainer.appendChild(projectElement);
         });
