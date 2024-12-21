@@ -576,12 +576,19 @@ section.recent-work .projects .project .action a:hover {
 }
 
 /* Hiển thị menu khi có class 'active' */
-nav .container ul {
+/* nav .container ul {
     display: none;
 }
 
 nav .container ul.active {
     display: flex;
+} */
+nav .container ul {
+    display: flex;
+}
+
+nav .container ul.active {
+    display: none;
 }
 
 /* Box shadow cho nav khi scroll */
