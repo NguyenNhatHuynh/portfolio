@@ -835,6 +835,24 @@ footer .copyright {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================== MEDIA QUERIES (PHONE) ===========================*/
 @media screen and (max-width: 600px) {
     h1 {
@@ -1051,24 +1069,6 @@ footer .copyright {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* =================== Filter Buttons =================== */
 .filter {
     text-align: center;
@@ -1153,11 +1153,40 @@ footer .copyright {
     color: white;
 }
 
+
+
 /* =================== Responsive Design =================== */
 @media (max-width: 768px) {
     .project {
         width: calc(50% - 20px);
         /* 2 items per row */
+    }
+
+    nav ul {
+        display: none;
+        /* Ẩn navbar ban đầu */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul.active {
+        display: block;
+        /* Hiển thị navbar khi nút menu được bấm */
+    }
+
+    #menu-btn {
+        display: inline-block;
+        /* Hiển thị nút menu khi màn hình nhỏ */
+    }
+
+    #close-btn {
+        display: inline-block;
+        /* Hiển thị nút đóng khi navbar mở */
     }
 }
 

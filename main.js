@@ -21,23 +21,23 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-// Menu Toggle
+// Menu Toggle (Chỉ hoạt động trên mobile)
 const menuBtn = document.querySelector("#menu-btn");
 const closeBtn = document.querySelector("#close-btn");
 const menu = document.querySelector("nav .container ul");
 
-if (menuBtn && closeBtn && menu) {
-    menuBtn.addEventListener('click', () => {
-        menu.classList.add('active');
-        menuBtn.style.display = 'none';
-        closeBtn.style.display = 'inline-block';
-    });
+const handleMenuToggle = () => {
+    // Kiểm tra nếu kích thước màn hình nhỏ
+    if (window.innerWidth <= 768) {
+        menu.classList.toggle('active');
+        menuBtn.style.display = menu.classList.contains('active') ? 'none' : 'inline-block';
+        closeBtn.style.display = menu.classList.contains('active') ? 'inline-block' : 'none';
+    }
+};
 
-    closeBtn.addEventListener('click', () => {
-        menu.classList.remove('active');
-        menuBtn.style.display = 'inline-block';
-        closeBtn.style.display = 'none';
-    });
+if (menuBtn && closeBtn && menu) {
+    menuBtn.addEventListener('click', handleMenuToggle);
+    closeBtn.addEventListener('click', handleMenuToggle);
 }
 
 // Active Menu Item
@@ -57,6 +57,22 @@ navItems.forEach(item => {
         link.addEventListener('click', () => changeActiveItem(link));
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Portfolio Filtering
 document.addEventListener('DOMContentLoaded', () => {
@@ -227,3 +243,58 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initial render
     renderProjects(currentFilter);
 });
+
+
+
+
+
+
+
+// JavaScript (Main.js): Thêm đoạn mã sau vào file main.js của bạn để xử lý sự kiện khi người dùng nhấn nút "Show more". Mã này sẽ làm cho nội dung bổ sung được hiển thị khi nhấn vào nút "Show more" và ẩn lại khi nhấn vào nút "Show less".
+document.addEventListener("DOMContentLoaded", () => {
+    const readMoreBtn = document.querySelector('.read-more');
+    const readMoreContent = document.querySelector('.read-more-content');
+
+    if (readMoreBtn && readMoreContent) {
+        readMoreBtn.addEventListener('click', () => {
+            // Kiểm tra nếu phần nội dung chưa hiển thị
+            if (readMoreContent.style.display === "none") {
+                readMoreContent.style.display = "block";  // Hiển thị nội dung thêm
+                readMoreBtn.textContent = "Show less";   // Thay đổi nút thành "Show less"
+            } else {
+                readMoreContent.style.display = "none";  // Ẩn nội dung thêm
+                readMoreBtn.textContent = "Show more";   // Thay đổi nút thành "Show more"
+            }
+        });
+    }
+});
+
+
+
+
+
+
+
+// Toggle Skill Item Visibility
+const skillHeaders = document.querySelectorAll('.skills .skill .head');
+if (skillHeaders.length > 0) {
+    skillHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const skillItems = header.closest('.skill').querySelector('.items');
+            const icon = header.querySelector('.material-icons-sharp');
+
+            // Toggle the display of the skill items
+            skillItems.classList.toggle('show-items');
+
+            // Change the icon when expanded or collapsed
+            if (skillItems.classList.contains('show-items')) {
+                icon.textContent = 'expand_less'; // Change icon to collapse
+            } else {
+                icon.textContent = 'expand_more'; // Change icon to expand
+            }
+        });
+    });
+}
+
+
+
