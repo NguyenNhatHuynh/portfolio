@@ -130,7 +130,8 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: 4, category: "app", title: "App Weather WeatherWave", detail: "", description: "(Flutter, Dart)", image: "./images/app_weather.png", github: "https://github.com/NguyenNhatHuynh/Weather-App-RestAPI.git", livedemo: "#", watch: "https://www.youtube.com/watch?v=PBh3lJZyXfU&list=PL2MC9XP17b4fVes2YB_Rr6id6URdnar-I" },
         { id: 5, category: "app", title: "Giao Diện App Bán Giày", detail: "", description: "(React Native)", image: "./images/app_CURRENTCRAZE.jpg", github: "https://github.com/NguyenNhatHuynh/app-shoes-nikeXD.git", livedemo: "#", watch: "https://www.youtube.com/watch?v=yYwRrmmWyFQ&list=PL2MC9XP17b4fVes2YB_Rr6id6URdnar-I&index=2" },
         { id: 6, category: "app", title: "Finance App", detail: "", description: "(Flutter, Dart)", image: "./images/app_finance.png", github: "https://github.com/NguyenNhatHuynh/Finance-XD-App.git", livedemo: "#", watch: "#" },
-        { id: 7, category: "app", title: "UniScore App", detail: "", description: "(Flutter, Dart, SQL Lite)", image: "./images/image_uniscore.png", github: "https://github.com/NguyenNhatHuynh/UniScore.git", livedemo: "#", watch: "#" },
+        { id: 7, category: "app", title: "UniScore App", detail: "", description: "(Flutter, Dart, Shared Preferences)", image: "./images/image_uniscore.png", github: "https://github.com/NguyenNhatHuynh/UniScore.git", livedemo: "#", watch: "https://youtu.be/QbQNyC2kZbE?si=UHIbe6roAxR15kIp" },
+        { id: 8, category: "app", title: "Time Tracker App", detail: "", description: "(Flutter, Dart)", image: "./images/time_tracker_app.jpg", github: "https://github.com/NguyenNhatHuynh/Time-Tracker-App.git", livedemo: "#", watch: "https://youtu.be/NDD69b67IQI?si=lilHvg7dX3zl6uxr" },
     ];
 
     const projectsContainer = document.querySelector(".projects");
