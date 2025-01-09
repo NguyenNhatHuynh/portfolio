@@ -148,6 +148,9 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: 6, category: "app", title: "Finance App", detail: "", description: "(Flutter, Dart)", image: "./images/app_finance.png", github: "https://github.com/NguyenNhatHuynh/Finance-XD-App.git", livedemo: "#", watch: "#" },
         { id: 7, category: "app", title: "UniScore App", detail: "", description: "(Flutter, Dart, Shared Preferences)", image: "./images/image_uniscore.png", github: "https://github.com/NguyenNhatHuynh/UniScore.git", livedemo: "#", watch: "https://youtu.be/QbQNyC2kZbE?si=UHIbe6roAxR15kIp" },
         { id: 8, category: "app", title: "Time Tracker App", detail: "", description: "(Flutter, Dart)", image: "./images/time_tracker_app.jpg", github: "https://github.com/NguyenNhatHuynh/Time-Tracker-App.git", livedemo: "#", watch: "https://youtu.be/NDD69b67IQI?si=lilHvg7dX3zl6uxr" },
+        { id: 9, category: "app", title: "Finance-XD App", detail: "", description: "(Flutter, Dart)", image: "./images/finance_app.png", github: "https://github.com/NguyenNhatHuynh/Finance-XD-App.git", livedemo: "#", watch: "https://youtu.be/NPSsAKFSj2E" },
+
+
     ];
 
     const projectsContainer = document.querySelector(".projects");
