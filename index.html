@@ -1,11 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Xoan Dev</title>
+    <script>
+        (function () {
+            const storedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = storedTheme || (systemPrefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 
     <!-- MATERIAL ICONS CDN -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
@@ -19,10 +27,8 @@
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 
-    <!-- SWIPER JS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-
     <!-- LINK STYLE CSS -->
+    <link rel="icon" type="image/jpeg" href="./images/profile/logo_web.jpg">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -42,8 +48,17 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Let's Talk</a></li>
             </ul>
-            <button id="menu-btn"><span class="material-icons-sharp">menu</span></button>
-            <button id="close-btn"><span class="material-icons-sharp">close</span></button>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+                    <span class="material-icons-sharp">dark_mode</span>
+                </button>
+                <button id="menu-btn" type="button" aria-label="Open menu">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <button id="close-btn" type="button" aria-label="Close menu">
+                    <span class="material-icons-sharp">close</span>
+                </button>
+            </div>
         </div>
     </nav>
     <!-- ==================== END OF NAVBAR ============================ -->
@@ -61,12 +76,11 @@
                 <a href="#" target="_blank"><i class="uil uil-dribbble"></i></a>
             </div>
             <div class="info">
-                <h1>UI/UX Designer & Fullstack Web - App Developer</h1>
+                <h1>UI/UX Designer & Fullstack Web - Mobile Developer</h1>
                 <h3>Hi, I'm Xoan Dev</h3>
-                <p>Hi, I’m Xoan Dev! I specialize in UI/UX design and fullstack web development with expertise in
-                    Flutter, Java, NodeJS, and MongoDB. I am passionate about creating seamless user experiences and
-                    building high-quality mobile and web applications. I am always eager to learn and share my knowledge
-                    with others.
+                <p>I’m a developer from Vietnam focused on crafting clean interfaces and practical digital products
+                    across web and mobile platforms. I work with Flutter, Java, and modern web technologies to build
+                    experiences that feel polished, intuitive, and reliable.
                 </p>
                 <a href="#contact" class="btn btn-primary">Let's Talk</a>
             </div>
@@ -88,7 +102,7 @@
                     </span>
                 </div>
                 <div class="inner-circle">
-                    <img src="./images/profile2.png">
+                    <img src="./images/profile/profile2.png" alt="Xoan Dev profile photo">
                 </div>
             </div>
         </div>
@@ -102,25 +116,24 @@
         <h1>About</h1>
         <div class="container">
             <div class="image">
-                <img src="./images/profile2.png" alt="">
+                <img src="./images/profile/profile2.png" alt="Xoan Dev profile photo">
             </div>
             <div class="info">
-                <p>I am a dedicated and creative Fullstack Web Developer and UI/UX Designer with a strong focus on
-                    developing mobile applications using Flutter and Dart, as well as building dynamic web applications
-                    with technologies like Java, NodeJS, and MongoDB</p>
+                <p>I’m a fullstack developer and UI/UX-focused builder who enjoys turning ideas into thoughtful web
+                    and mobile experiences. My work combines product thinking, visual clarity, and practical
+                    engineering to create applications that are easy to use and maintain.</p>
                 <div class="read-more-content" style="display: none;">
-                    <p>I take pride in crafting intuitive, user-centered designs while ensuring that the technical side
-                        of things is scalable, efficient, and robust.</p>
-                    <p>With an outgoing personality and a collaborative mindset, I enjoy working in a fast-paced,
-                        team-oriented environment. I’m constantly learning new tools and techniques to stay ahead in
-                        this ever-evolving field. I also enjoy mentoring and sharing my experience with colleagues and
-                        peers, believing that knowledge-sharing creates stronger teams.</p>
-                    <p>If you're looking for a developer who combines both design and development skills to deliver
-                        exceptional results, I’d love to connect and contribute to your team’s success!</p>
-                    <p> You can contact me below</p>
+                    <p>I care about building interfaces that are clear, responsive, and pleasant to use, while keeping
+                        the underlying codebase structured and scalable.</p>
+                    <p>My toolkit spans Flutter, React Native, Java, Spring Boot, PHP, and modern frontend workflows,
+                        along with database systems such as MySQL, SQL Server, SQLite, and MongoDB.</p>
+                    <p>I enjoy working across the full product flow, from interface design and user experience to
+                        implementation, testing, and iteration.</p>
+                    <p>If you’re looking for someone who can contribute across web and mobile development with a
+                        thoughtful product mindset, I’d be glad to connect.</p>
                 </div>
                 <a class="read-more">Show more</a>
-                <a href="." download class="btn btn-primary"><i class="uil uil-download-alt"></i> Download
+                <a href="./images/cv/NguyenNhatHuynh_MobileDeveloper_CV.pdf" download class="btn btn-primary"><i class="uil uil-download-alt"></i> Download
                     CV</a>
             </div>
         </div>
@@ -383,11 +396,11 @@
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
             </div>
             <!-- Danh sách dự án -->
             <div class="projects">
-                <!-- Các dự án được lặp qua JavaScript -->
+                <!-- Các dự án được render bằng JavaScript -->
             </div>
 
             <!-- Pagination buttons -->
@@ -399,29 +412,29 @@
         </div>
     </section>
 
-    <!-- ============================ RECENT WORK (PORTFOLIO) ========================= -->
-
-
-
-    <!-- ============================ START CONTACT - LET'S TALL (PORTFOLIO) ========================= -->
+    <!-- ============================ START CONTACT - LET'S TALK (PORTFOLIO) ========================= -->
 
     <section class="contact" id="contact">
         <div class="overlay">
             <div class="container">
                 <h1>Let's Talk</h1>
-                <p>I'm really happy and excited when you contact me. [~+~]</p>
-                <form action="https://formspree.io/f/xqazrqgq" method="POST">
+                <p>If you have an idea, a collaboration in mind, or simply want to say hello, I'd be glad to hear from you. Share a few details below and I'll get back to you soon.</p>
+                <div class="form-status" aria-live="polite" role="status">
+                    <span class="material-icons-sharp toast-icon" aria-hidden="true">info</span>
+                    <span class="toast-text"></span>
+                </div>
+                <form action="https://formspree.io/f/mlgkgwdo" method="POST">
                     <input type="text" name="Name" placeholder="Name" required>
                     <input type="email" name="Email" placeholder="Email" required>
                     <input type="text" name="Subject" placeholder="Subject" required>
                     <textarea name="Message" placeholder="Message" required></textarea>
-                    <input type="submit" value="Submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary form-submit-btn">Submit</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- ============================ END CONTACT - LET'S TALL (PORTFOLIO) ========================= -->
+    <!-- ============================ END CONTACT - LET'S TALK (PORTFOLIO) ========================= -->
 
 
 
@@ -454,8 +467,6 @@
 
     <!-- ============================ END FOOTER (PORTFOLIO) ========================= -->
 
-    <!-- swiper js -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
 
 
