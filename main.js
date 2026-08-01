@@ -83,8 +83,13 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 1,
             category: "web",
             title: "Fullstack Blog Website",
-            detail: "Ứng dụng web cho phép người dùng đăng ký, đăng nhập và quản lý blog cá nhân.",
-            description: "(PHP, MySQL, JavaScript)",
+            detail: "Website blog cá nhân cho người dùng đăng ký, đăng nhập và quản lý bài viết.",
+            description: "PHP, MySQL, JavaScript",
+            highlights: [
+                "Cho phép người dùng tạo tài khoản và đăng nhập an toàn.",
+                "Hỗ trợ quản lý bài viết và hiển thị nội dung rõ ràng.",
+                "Dùng PHP và MySQL để xây dựng hệ thống backend thực tế."
+            ],
             image: "./images/projects/fullstack-blog/banner.jpg",
             github: { label: "GitHub Private", url: null },
             livedemo: { label: "Live Demo", url: null },
@@ -94,8 +99,13 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 2,
             category: "web",
             title: "Design Website E-Commerce Fashion",
-            detail: "Website thương mại điện tử thời trang với trải nghiệm mua sắm trực tuyến mượt mà.",
-            description: "(React, Node.js, MongoDB)",
+            detail: "Website thương mại điện tử thời trang với trải nghiệm mua sắm mượt mà.",
+            description: "React, Node.js, MongoDB",
+            highlights: [
+                "Thiết kế storefront trực quan cho trải nghiệm mua sắm tốt hơn.",
+                "Tích hợp dữ liệu sản phẩm và workflow thương mại điện tử cơ bản.",
+                "Dùng React, Node.js và MongoDB cho hệ thống hiện đại."
+            ],
             image: "./images/projects/ecommerce-fashion/banner.jpg",
             github: { label: "GitHub Private", url: null },
             livedemo: { label: "Live Demo", url: "https://web-e-commerce-fashion.vercel.app/" },
@@ -105,8 +115,13 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 3,
             category: "web",
             title: "Web Travel",
-            detail: "Website du lịch cho phép giới thiệu, quản lý và trải nghiệm các tour / hành trình.",
-            description: "(PHP, SQL Server)",
+            detail: "Website du lịch giúp giới thiệu tour và quản lý hành trình du lịch.",
+            description: "PHP, SQL Server",
+            highlights: [
+                "Hiển thị thông tin tour rõ ràng và dễ tìm kiếm.",
+                "Hỗ trợ quản lý dữ liệu hành trình và thông tin khách hàng.",
+                "Sử dụng PHP và SQL Server cho backend ổn định."
+            ],
             image: "./images/projects/web-travel/banner.jpg",
             github: { label: "GitHub", url: "https://github.com/NguyenNhatHuynh/Web_Travel.git" },
             livedemo: { label: "Live Demo", url: "https://webtravel-production.up.railway.app/" },
@@ -116,8 +131,13 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 4,
             category: "mobile",
             title: "App Weather WeatherWave",
-            detail: "Ứng dụng thời tiết Flutter với giao diện trực quan và cập nhật dữ liệu theo API.",
-            description: "(Flutter, Dart)",
+            detail: "Ứng dụng thời tiết Flutter với giao diện dễ theo dõi và dữ liệu cập nhật theo API.",
+            description: "Flutter, Dart",
+            highlights: [
+                "Hiển thị thời tiết hiện tại và dự báo theo thời gian.",
+                "Giao diện trực quan, thân thiện với người dùng mobile.",
+                "Tích hợp API thời tiết để cập nhật dữ liệu nhanh."
+            ],
             image: "./images/projects/weather-wave/banner.png",
             github: { label: "GitHub", url: "https://github.com/NguyenNhatHuynh/Weather-App-RestAPI.git" },
             livedemo: { label: "Live Demo", url: null },
@@ -127,8 +147,13 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 5,
             category: "mobile",
             title: "Giao Diện App Bán Giày",
-            detail: "Giao diện mua sắm giày với bố cục hiện đại, tối ưu cho trải nghiệm mobile.",
-            description: "(React Native)",
+            detail: "Giao diện mua sắm giày với layout hiện đại cho trải nghiệm mobile rõ ràng.",
+            description: "React Native",
+            highlights: [
+                "Tạo bố cục hiển thị sản phẩm đẹp và dễ hiểu.",
+                "Tối ưu trải nghiệm mua sắm trên màn hình điện thoại.",
+                "Hỗ trợ phát triển giao diện mobile theo phong cách hiện đại."
+            ],
             image: "./images/projects/shoes-nikexd/banner.jpg",
             github: { label: "GitHub", url: "https://github.com/NguyenNhatHuynh/app-shoes-nikeXD.git" },
             livedemo: { label: "Live Demo", url: null },
@@ -138,8 +163,13 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 6,
             category: "mobile",
             title: "UniScore App",
-            detail: "Ứng dụng tra cứu điểm và quản lý thông tin học tập.",
-            description: "(Flutter, Dart, Shared Preferences)",
+            detail: "Ứng dụng tra cứu điểm và quản lý thông tin học tập cá nhân.",
+            description: "Flutter, Dart, Shared Preferences",
+            highlights: [
+                "Cho phép xem điểm và lưu thông tin học tập trên thiết bị.",
+                "Tạo workflow đơn giản cho người dùng tra cứu nhanh.",
+                "Dùng Flutter và Shared Preferences để lưu dữ liệu cục bộ."
+            ],
             image: "./images/projects/uniscore/banner.png",
             github: { label: "GitHub", url: "https://github.com/NguyenNhatHuynh/UniScore.git" },
             livedemo: { label: "Live Demo", url: null },
@@ -149,8 +179,12 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 7,
             category: "mobile",
             title: "Time Tracker App",
-            detail: "Ứng dụng theo dõi thời gian làm việc và quản lý thói quen.",
-            description: "(Flutter, Dart)",
+            detail: "Ứng dụng theo dõi thời gian làm việc và quản lý thói quen cá nhân.",
+            description: "Flutter, Dart",
+            highlights: [
+                "Theo dõi thời gian làm việc theo từng hoạt động.",
+                "Giúp người dùng kiểm soát thói quen hiệu quả hơn.",
+                "Thiết kế tương tác đơn giản cho mobile app."] ,
             image: "./images/projects/time-tracker/banner.jpg",
             github: { label: "GitHub", url: "https://github.com/NguyenNhatHuynh/Time-Tracker-App.git" },
             livedemo: { label: "Live Demo", url: null },
@@ -160,8 +194,13 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 8,
             category: "mobile",
             title: "Finance-XD App",
-            detail: "Ứng dụng quản lý chi tiêu cá nhân với giao diện Flutter.",
-            description: "(Flutter, Dart)",
+            detail: "Ứng dụng quản lý chi tiêu cá nhân với giao diện Flutter rõ ràng.",
+            description: "Flutter, Dart",
+            highlights: [
+                "Theo dõi chi tiêu và quản lý ngân sách cá nhân.",
+                "Hiển thị thống kê đơn giản để người dùng hiểu rõ tình hình tài chính.",
+                "Dùng Flutter để xây dựng trải nghiệm mobile mượt mà."
+            ],
             image: "./images/projects/finance-xd/banner.png",
             github: { label: "GitHub", url: "https://github.com/NguyenNhatHuynh/Finance-XD-App.git" },
             livedemo: { label: "Live Demo", url: null },
@@ -171,8 +210,13 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 9,
             category: "web",
             title: "RemoveBGNow",
-            detail: "A fullstack AI background remover for images and GIFs with analytics and admin tools.",
-            description: "(Next.js, FastAPI, rembg, Supabase, Tailwind CSS)",
+            detail: "Web app AI xoá nền hình ảnh và GIF với dashboard quản trị và phân tích dữ liệu.",
+            description: "Next.js, FastAPI, rembg, Supabase, Tailwind CSS",
+            highlights: [
+                "Cho phép xoá nền ảnh và GIF bằng AI.",
+                "Tích hợp quản trị, phân tích và lưu trữ dữ liệu.",
+                "Dùng Next.js, FastAPI và Supabase cho nền tảng hiện đại."
+            ],
             image: "./images/projects/removebgnow/banner.png",
             github: { label: "GitHub Private", url: null },
             livedemo: { label: "Live Demo", url: "https://remove-bg-nowxd.vercel.app" },
@@ -182,8 +226,13 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 10,
             category: "web",
             title: "Online Voting System Using Blockchain",
-            detail: "Hệ thống bầu cử trực tuyến với blockchain, OTP, MetaMask và MySQL.",
-            description: "(Blockchain, Solidity, Node.js/Express, MySQL)",
+            detail: "Hệ thống bầu cử trực tuyến với blockchain, OTP và MetaMask.",
+            description: "Blockchain, Solidity, Node.js/Express, MySQL",
+            highlights: [
+                "Tạo quy trình bầu cử trực tuyến với tính bảo mật cao.",
+                "Tích hợp OTP và MetaMask cho xác thực người dùng.",
+                "Dùng blockchain và MySQL để tăng độ tin cậy hệ thống."
+            ],
             image: "./images/projects/online-voting-system-using-blockchain/banner.png",
             github: { label: "GitHub Private", url: null },
             livedemo: { label: "Live Demo", url: null },
@@ -193,8 +242,13 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 11,
             category: "mobile",
             title: "Voice Camera Pro",
-            detail: "Ứng dụng di động chụp ảnh hoặc quay video bằng lệnh giọng nói.",
-            description: "(Mobile App)",
+            detail: "Ứng dụng chụp ảnh và quay video bằng lệnh giọng nói.",
+            description: "Mobile App",
+            highlights: [
+                "Cho phép chụp hình hoặc quay video bằng voice command.",
+                "Tạo trải nghiệm tương tác thân thiện cho người dùng mobile.",
+                "Hỗ trợ các tác vụ nhanh mà không cần chạm tay."
+            ],
             image: "./images/projects/voice-camera-pro/banner.png",
             github: { label: "GitHub Private", url: null },
             livedemo: { label: "Live Demo", url: null },
@@ -204,8 +258,13 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 12,
             category: "mobile",
             title: "Plant Recognition App",
-            detail: "Flutter app nhận diện cây từ ảnh, lưu lịch sử quét và đồng bộ dữ liệu qua Supabase.",
-            description: "(Flutter, SQLite, Supabase, Gemini)",
+            detail: "Ứng dụng nhận diện cây từ ảnh và lưu lịch sử quét bằng Supabase.",
+            description: "Flutter, SQLite, Supabase, Gemini",
+            highlights: [
+                "Nhận diện loài cây từ ảnh người dùng tải lên.",
+                "Lưu lịch sử quét và đồng bộ dữ liệu qua Supabase.",
+                "Kết hợp Flutter, SQLite và Gemini cho trải nghiệm AI thực tế."
+            ],
             image: "./images/projects/plant-recognition-app/banner.png",
             github: { label: "GitHub Private", url: null },
             livedemo: { label: "Live Demo", url: null },
@@ -271,6 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h3>${project.title}</h3>
                 <p>${project.detail}</p>
                 <p>${project.description}</p>
+                ${project.highlights?.length ? `<ul class="project-highlights">${project.highlights.map((item) => `<li>${item}</li>`).join("")}</ul>` : ""}
                 <div class="action">
                     ${renderAction(project.github)}
                     ${renderAction(project.livedemo)}
@@ -321,7 +381,7 @@ document.addEventListener("DOMContentLoaded", () => {
         readMoreBtn.addEventListener("click", () => {
             const isHidden = readMoreContent.style.display === "none";
             readMoreContent.style.display = isHidden ? "block" : "none";
-            readMoreBtn.textContent = isHidden ? "Show less" : "Show more";
+            readMoreBtn.textContent = isHidden ? "Thu gọn" : "Xem thêm";
         });
     }
 

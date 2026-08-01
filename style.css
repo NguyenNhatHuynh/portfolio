@@ -686,6 +686,21 @@ section.recent-work .projects .project p {
     padding: 0 1rem;
 }
 
+section.recent-work .projects .project .project-highlights {
+    padding: 0 1.25rem 0 2.25rem;
+    margin: 0;
+    display: grid;
+    gap: 0.45rem;
+    text-align: left;
+    list-style: disc;
+}
+
+section.recent-work .projects .project .project-highlights li {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
 section.recent-work .projects .project .action {
     display: flex;
     flex-wrap: wrap;
@@ -889,11 +904,14 @@ section.contact form textarea::placeholder {
 }
 
 section.contact form .btn {
-    width: 14rem;
+    width: 100%;
+    max-width: 14rem;
     border: none;
+    border-radius: 999px;
     background: var(--bg-surface);
     color: var(--text-primary);
     margin: 2rem auto 0;
+    font-weight: 700;
 }
 
 section.contact form .btn:hover {
@@ -991,11 +1009,15 @@ footer .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 footer .container ul {
     display: flex;
-    gap: 3rem
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer .container ul a {
@@ -1009,7 +1031,8 @@ footer .container ul a:hover {
 
 footer .container .socials {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 footer .container .socials a {
