@@ -295,13 +295,27 @@ document.addEventListener("DOMContentLoaded", () => {
         nextPageBtn.disabled = currentPage * projectsPerPage >= totalProjects;
     };
 
-    const renderAction = ({ label, url }) => {
+    const actionMeta = {
+        github: { icon: "code", label: "Mã nguồn" },
+        livedemo: { icon: "open_in_new", label: "Xem trực tiếp" },
+        watch: { icon: "play_circle", label: "Video demo" },
+    };
+
+    const renderAction = (type, { label, url }) => {
         if (!url) {
-            return `<span class="action-chip is-disabled">${label}</span>`;
+            return label.includes("Private")
+                ? `<span class="action-chip is-private"><span class="material-icons-sharp" aria-hidden="true">lock</span>Mã nguồn riêng tư</span>`
+                : "";
         }
 
-        return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="action-chip">${label}</a>`;
+        const meta = actionMeta[type];
+        return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="action-chip"><span class="material-icons-sharp" aria-hidden="true">${meta.icon}</span>${meta.label}</a>`;
     };
+
+    const renderTechStack = (description) => description
+        .split(",")
+        .map((technology) => `<span>${technology.trim()}</span>`)
+        .join("");
 
     const renderProjects = (filter) => {
         projectsContainer.innerHTML = "";
@@ -326,15 +340,20 @@ document.addEventListener("DOMContentLoaded", () => {
             projectElement.innerHTML = `
                 <div class="thumbnail">
                     <img src="${project.image}" alt="${project.title}">
+                    <span class="project-type">${project.category === "web" ? "Web app" : "Mobile app"}</span>
                 </div>
-                <h3>${project.title}</h3>
-                <p>${project.detail}</p>
-                <p>${project.description}</p>
-                ${project.highlights?.length ? `<ul class="project-highlights">${project.highlights.map((item) => `<li>${item}</li>`).join("")}</ul>` : ""}
+                <div class="project-content">
+                    <h3>${project.title}</h3>
+                    <p class="project-summary">${project.detail}</p>
+                    <div class="project-stack" aria-label="Công nghệ sử dụng">
+                        ${renderTechStack(project.description)}
+                    </div>
+                    ${project.highlights?.length ? `<ul class="project-highlights">${project.highlights.slice(0, 2).map((item) => `<li>${item}</li>`).join("")}</ul>` : ""}
+                </div>
                 <div class="action">
-                    ${renderAction(project.github)}
-                    ${renderAction(project.livedemo)}
-                    ${renderAction(project.watch)}
+                    ${renderAction("github", project.github)}
+                    ${renderAction("livedemo", project.livedemo)}
+                    ${renderAction("watch", project.watch)}
                 </div>
             `;
             fragment.appendChild(projectElement);
